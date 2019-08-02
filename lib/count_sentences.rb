@@ -18,7 +18,7 @@ class String
     if self.end_with?(".", "?", "!")
       array = []
       array = self.split
-      array.reject {|x| x.empty?}
+      array.reject! {|x| x.empty?}
       array.count
     else
       return 0
